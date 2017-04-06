@@ -12,8 +12,6 @@
 		73417C8116CF1C9C0021B06C /* BMI.m in Sources */ = {isa = PBXBuildFile; fileRef = 73417C8016CF1C9C0021B06C /* BMI.m */; };
 		7366380016D0165F0077D4EA /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 736637FF16D0165F0077D4EA /* UserDefaults.m */; };
 		73674A2416D283AF003CE77E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 73674A2316D283AF003CE77E /* README.md */; };
-		737C146A16D52D5F000EF369 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C146916D52D5F000EF369 /* Icon.png */; };
-		737C146C16D52D6A000EF369 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C146B16D52D6A000EF369 /* Icon@2x.png */; };
 		737C775B16D20E700099613C /* Weightlifting-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C775A16D20E700099613C /* Weightlifting-128.png */; };
 		737C775D16D20E980099613C /* Weightlifting-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C775C16D20E980099613C /* Weightlifting-114.png */; };
 		73D625C916CE8DCC0084C149 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D625C816CE8DCC0084C149 /* UIKit.framework */; };
@@ -29,6 +27,7 @@
 		73D625E516CE8DCC0084C149 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D625E416CE8DCC0084C149 /* FlipsideViewController.m */; };
 		73D625E816CE8DCC0084C149 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73D625E616CE8DCC0084C149 /* MainViewController.xib */; };
 		73D625EB16CE8DCC0084C149 /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73D625E916CE8DCC0084C149 /* FlipsideViewController.xib */; };
+		970E0A941E9676CB0050324A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970E0A931E9676CB0050324A /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +38,6 @@
 		736637FE16D0165F0077D4EA /* UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefaults.h; path = ../UserDefaults.h; sourceTree = "<group>"; };
 		736637FF16D0165F0077D4EA /* UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDefaults.m; path = ../UserDefaults.m; sourceTree = "<group>"; };
 		73674A2316D283AF003CE77E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		737C146916D52D5F000EF369 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		737C146B16D52D6A000EF369 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		737C775A16D20E700099613C /* Weightlifting-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weightlifting-128.png"; sourceTree = "<group>"; };
 		737C775C16D20E980099613C /* Weightlifting-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weightlifting-114.png"; sourceTree = "<group>"; };
 		73D625C516CE8DCC0084C149 /* BMICalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +59,7 @@
 		73D625E416CE8DCC0084C149 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		73D625E716CE8DCC0084C149 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
 		73D625EA16CE8DCC0084C149 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipsideViewController.xib; sourceTree = "<group>"; };
+		970E0A931E9676CB0050324A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +79,7 @@
 		73D625BC16CE8DCC0084C149 = {
 			isa = PBXGroup;
 			children = (
-				737C146B16D52D6A000EF369 /* Icon@2x.png */,
-				737C146916D52D5F000EF369 /* Icon.png */,
+				970E0A931E9676CB0050324A /* Media.xcassets */,
 				73131B1516D2CCC100B229DA /* Default@2x.png */,
 				73131B1316D2CBF900B229DA /* Default.png */,
 				73674A2316D283AF003CE77E /* README.md */,
@@ -174,6 +171,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Soroush Pour";
+				TargetAttributes = {
+					73D625C416CE8DCC0084C149 = {
+						DevelopmentTeam = 4BLWLFDFU8;
+					};
+				};
 			};
 			buildConfigurationList = 73D625C016CE8DCC0084C149 /* Build configuration list for PBXProject "BMICalc" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -199,6 +201,7 @@
 			files = (
 				73D625D316CE8DCC0084C149 /* InfoPlist.strings in Resources */,
 				73D625DB16CE8DCC0084C149 /* Default.png in Resources */,
+				970E0A941E9676CB0050324A /* Media.xcassets in Resources */,
 				73D625DD16CE8DCC0084C149 /* Default@2x.png in Resources */,
 				73D625DF16CE8DCC0084C149 /* Default-568h@2x.png in Resources */,
 				73D625E816CE8DCC0084C149 /* MainViewController.xib in Resources */,
@@ -208,8 +211,6 @@
 				73674A2416D283AF003CE77E /* README.md in Resources */,
 				73131B1416D2CBF900B229DA /* Default.png in Resources */,
 				73131B1616D2CCC100B229DA /* Default@2x.png in Resources */,
-				737C146A16D52D5F000EF369 /* Icon.png in Resources */,
-				737C146C16D52D6A000EF369 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,9 +319,13 @@
 		73D625EF16CE8DCC0084C149 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BLWLFDFU8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMICalc/BMICalc-Prefix.pch";
 				INFOPLIST_FILE = "BMICalc/BMICalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamming.bmi.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -329,9 +334,13 @@
 		73D625F016CE8DCC0084C149 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BLWLFDFU8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMICalc/BMICalc-Prefix.pch";
 				INFOPLIST_FILE = "BMICalc/BMICalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamming.bmi.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

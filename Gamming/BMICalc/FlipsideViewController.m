@@ -56,7 +56,7 @@
 
 - (IBAction)btnAboutClicked:(id)sender {
     
-    UIAlertView *aboutMsg = [[UIAlertView alloc] initWithTitle:@"About BMICalc" message:@"Developed by Soroush Pour\nTested by Tom Boyle\nTested by Fabio Berger\n\n\nThis app is 100% Open Source.\n\nFind the code at:\n github.com/soroushjp/bmicalc_ios" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    UIAlertView *aboutMsg = [[UIAlertView alloc] initWithTitle:@"About BMICalc" message:@"Developed by Soroush Pour\nTested by Tom Boyle\nTested by Fabio Berger\n\n\n" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
     
     [aboutMsg show];
     
