@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlipsideViewController">
+            <connections>
+                <outlet property="settingUnits" destination="50" id="84"/>
+                <outlet property="view" destination="40" id="41"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="40">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="42">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="Settings" id="43">
+                            <barButtonItem key="leftBarButtonItem" systemItem="done" id="44">
+                                <connections>
+                                    <action selector="done:" destination="-1" id="46"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="50">
+                    <rect key="frame" x="20" y="99" width="335" height="29"/>
+                    <segments>
+                        <segment title="m kg (SI)"/>
+                        <segment title="ft-in lb (EE)"/>
+                    </segments>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Units:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59">
+                    <rect key="frame" x="20" y="53" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="71"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="BMI Categories:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="120">
+                    <rect key="frame" x="20" y="174" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="121"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Underweight:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="129">
+                    <rect key="frame" x="28" y="214" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="130"/>
+                        <constraint firstAttribute="width" constant="158" id="135"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Less than 18" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="176">
+                    <rect key="frame" x="187" y="214" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="158" id="178"/>
+                        <constraint firstAttribute="height" constant="32" id="188"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="18-24.9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="189">
+                    <rect key="frame" x="187" y="239" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="191"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="25-29.9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="198">
+                    <rect key="frame" x="187" y="268" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="211"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="More than 30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="212">
+                    <rect key="frame" x="187" y="296" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="213"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Normal weight:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="160">
+                    <rect key="frame" x="28" y="239" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="161"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Overweight:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="144">
+                    <rect key="frame" x="28" y="268" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="145"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Obese:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="152">
+                    <rect key="frame" x="28" y="296" width="158" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="153"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="© 2017 TWOKING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85">
+                    <rect key="frame" x="91" y="629" width="169" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="89"/>
+                        <constraint firstAttribute="width" constant="169" id="90"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93">
+                    <rect key="frame" x="20" y="578" width="335" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="About">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAboutClicked:" destination="-1" eventType="touchUpInside" id="103"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="42" firstAttribute="leading" secondItem="40" secondAttribute="leading" id="47"/>
+                <constraint firstItem="42" firstAttribute="top" secondItem="40" secondAttribute="top" id="48"/>
+                <constraint firstItem="42" firstAttribute="trailing" secondItem="40" secondAttribute="trailing" id="57"/>
+                <constraint firstItem="85" firstAttribute="leading" secondItem="40" secondAttribute="leading" constant="91" id="92"/>
+                <constraint firstItem="93" firstAttribute="leading" secondItem="40" secondAttribute="leading" constant="20" symbolic="YES" id="95"/>
+                <constraint firstAttribute="trailing" secondItem="93" secondAttribute="trailing" constant="20" symbolic="YES" id="96"/>
+                <constraint firstItem="59" firstAttribute="leading" secondItem="40" secondAttribute="leading" constant="20" symbolic="YES" id="99"/>
+                <constraint firstItem="50" firstAttribute="leading" secondItem="40" secondAttribute="leading" constant="20" symbolic="YES" id="100"/>
+                <constraint firstAttribute="trailing" secondItem="50" secondAttribute="trailing" constant="20" symbolic="YES" id="101"/>
+                <constraint firstAttribute="bottom" secondItem="85" secondAttribute="bottom" constant="17" id="105"/>
+                <constraint firstAttribute="bottom" secondItem="93" secondAttribute="bottom" constant="59" id="117"/>
+                <constraint firstItem="120" firstAttribute="trailing" secondItem="59" secondAttribute="trailing" id="125"/>
+                <constraint firstItem="120" firstAttribute="leading" secondItem="40" secondAttribute="leading" constant="20" symbolic="YES" id="127"/>
+                <constraint firstItem="129" firstAttribute="top" secondItem="120" secondAttribute="bottom" constant="8" symbolic="YES" id="133"/>
+                <constraint firstItem="129" firstAttribute="leading" secondItem="40" secondAttribute="leading" constant="28" id="134"/>
+                <constraint firstItem="152" firstAttribute="trailing" secondItem="144" secondAttribute="trailing" id="157"/>
+                <constraint firstItem="152" firstAttribute="leading" secondItem="144" secondAttribute="leading" id="159"/>
+                <constraint firstItem="160" firstAttribute="trailing" secondItem="129" secondAttribute="trailing" id="171"/>
+                <constraint firstItem="160" firstAttribute="leading" secondItem="144" secondAttribute="leading" id="172"/>
+                <constraint firstItem="160" firstAttribute="leading" secondItem="129" secondAttribute="leading" id="173"/>
+                <constraint firstItem="160" firstAttribute="trailing" secondItem="144" secondAttribute="trailing" id="175"/>
+                <constraint firstItem="129" firstAttribute="baseline" secondItem="176" secondAttribute="baseline" id="187"/>
+                <constraint firstItem="189" firstAttribute="trailing" secondItem="176" secondAttribute="trailing" id="194"/>
+                <constraint firstItem="189" firstAttribute="leading" secondItem="176" secondAttribute="leading" id="197"/>
+                <constraint firstItem="198" firstAttribute="baseline" secondItem="144" secondAttribute="baseline" id="207"/>
+                <constraint firstItem="198" firstAttribute="trailing" secondItem="189" secondAttribute="trailing" id="209"/>
+                <constraint firstItem="198" firstAttribute="leading" secondItem="189" secondAttribute="leading" id="210"/>
+                <constraint firstItem="212" firstAttribute="baseline" secondItem="152" secondAttribute="baseline" id="219"/>
+                <constraint firstItem="212" firstAttribute="trailing" secondItem="198" secondAttribute="trailing" id="220"/>
+                <constraint firstItem="212" firstAttribute="leading" secondItem="198" secondAttribute="leading" id="221"/>
+                <constraint firstItem="189" firstAttribute="baseline" secondItem="160" secondAttribute="baseline" id="233"/>
+                <constraint firstItem="176" firstAttribute="leading" secondItem="40" secondAttribute="leading" constant="187" id="235"/>
+                <constraint firstItem="59" firstAttribute="top" secondItem="40" secondAttribute="top" constant="53" id="237"/>
+                <constraint firstItem="50" firstAttribute="top" secondItem="40" secondAttribute="top" constant="99" id="239"/>
+                <constraint firstItem="212" firstAttribute="top" secondItem="40" secondAttribute="top" constant="296" id="242"/>
+                <constraint firstItem="189" firstAttribute="top" secondItem="40" secondAttribute="top" constant="239" id="243"/>
+                <constraint firstItem="120" firstAttribute="top" secondItem="40" secondAttribute="top" constant="174" id="244"/>
+                <constraint firstItem="198" firstAttribute="top" secondItem="40" secondAttribute="top" constant="268" id="245"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
